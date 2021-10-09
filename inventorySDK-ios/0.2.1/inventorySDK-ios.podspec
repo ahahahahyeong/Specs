@@ -32,8 +32,7 @@ Pod::Spec.new do |s|
 #    s.source_files = 'inventorySDK-ios/Classes/**/*'
 #    s.resources = 'inventorySDK-ios/Assets/**/*'
     
-    s.vendored_frameworks =  'inventorySDK-ios/Frameworks/UnityAds.framework'
-#    ,'inventorySDK-ios/Frameworks/inventorySDK_ios.framework'
+    s.vendored_frameworks =  'inventorySDK-ios/Frameworks/UnityAds.framework' ,'inventorySDK-ios/Frameworks/inventorySDK_ios.framework'
     s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 arm64e armv7 armv7s', 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'i386 x86_64' }
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 arm64e armv7 armv7s', 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'i386 x86_64' }
     s.dependency 'RxSwift', '5.0'
